@@ -203,28 +203,34 @@ h1, h2 {
   margin-top: 15px;
 }
 
-.btn {
+/* Buttons (fixed so they render correctly on GitHub Pages) */
+#projects a.btn,
+#projects a.btn.secondary {
   display: inline-block;
-  background: #EAEAEA;
-  color: #fff;
-  padding: 10px 18px;
-  border-radius: 5px;
+  padding: 10px 20px;
+  border-radius: 6px;
   text-decoration: none;
   margin: 5px;
   font-weight: bold;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
+  color: #fff !important;
 }
 
-.btn:hover {
+#projects a.btn {
+  background: #73000A;
+}
+
+#projects a.btn:hover {
+  background: #a80010;
+  transform: scale(1.05);
+}
+
+#projects a.btn.secondary {
   background: #5C5C5C;
 }
 
-.btn.secondary {
-  background: #EAEAEA;
-}
-
-.btn.secondary:hover {
-  background: #5C5C5C;
+#projects a.btn.secondary:hover {
+  background: #000;
 }
 
 /* Expandable project details */
@@ -237,7 +243,7 @@ details {
   transition: all 0.3s ease;
 }
 
-/* Make summary look like a clickable button */
+/* Make summary look like a clickable link */
 summary {
   color: #73000A;
   font-weight: bold;
