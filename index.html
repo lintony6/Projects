@@ -51,15 +51,42 @@
 
   <section id="projects">
     <h2>Projects</h2>
-    <ul>
-      <li>
-        <a href="https://lintony6.github.io/WeatherApp">
-          <img src="assets/images/WeatherAppWebUI.png" alt="Weather App Screenshot" class="project-img">
-          Weather App
-        </a>: A dashboard for real-time weather data built with Python and AWS Lambda.
-      </li>
-    </ul>
+
+    <div class="project-card">
+      <h3>WeatherApp</h3>
+      <img src="assets/images/WeatherAppWebUI.png" alt="Weather App Screenshot" class="project-img">
+      <p><strong>Description:</strong> WeatherApp provides current weather information and a 5-day forecast for any city, available as both desktop and web versions. It uses the OpenWeatherMap and LocationIQ APIs to display real-time weather data and maps.</p>
+
+      <details>
+        <summary>View Details</summary>
+        <div class="details-content">
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li><strong>Frontend:</strong> HTML, CSS, JavaScript</li>
+            <li><strong>Backend:</strong> Flask (Python 3.11)</li>
+            <li><strong>Deployment:</strong> AWS Lambda (via Zappa)</li>
+            <li><strong>Hosting:</strong> GitHub Pages</li>
+            <li><strong>APIs:</strong> OpenWeatherMap, LocationIQ</li>
+          </ul>
+
+          <h4>Key Features</h4>
+          <ul class="features">
+            <li>🌤 Current weather: temperature, humidity, description</li>
+            <li>📅 5-day forecast with daily min/max temperatures</li>
+            <li>🗺 Map display centered on selected city</li>
+            <li>🔍 Autocomplete city search (web version)</li>
+            <li>☁️ Fully serverless backend hosted on AWS Lambda</li>
+          </ul>
+        </div>
+      </details>
+
+      <div class="links">
+        <a href="https://github.com/lintony6/WeatherApp" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://lintony6.github.io/WeatherApp/" target="_blank" class="btn secondary">Live Demo</a>
+      </div>
+    </div>
   </section>
+
 
   <section id="contact">
     <h2>Contact</h2>
