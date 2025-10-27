@@ -4,7 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tony's Portfolio</title>
-  <link rel="stylesheet" href="css/styles.css">
+  <link id="main-style" rel="stylesheet" href="css/styles.css">
+
+  <script>
+    // Bust cache by appending the file's last modified time as a query string
+    const css = document.getElementById('main-style');
+    const timestamp = new Date().getTime(); // or use performance.now() for uniqueness
+    css.href = `${css.href}?v=${timestamp}`;
+  </script>
 </head>
 <body>
   <header>
