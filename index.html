@@ -41,10 +41,10 @@
       <div class="cert">
         <img src="assets/images/CompTIANetwork+2025.png" alt="CompTIA Network+ Certification" class="cert-img">
         <p>CompTIA Network+</p>
-              <div class="cert">
-        <img src="assets/images/CompTIAServer+2025.png" alt="CompTIA Server+ Certification" class="cert-img">
-        <p>CompTIA Server+</p>
-      </div>
+        <div class="cert">
+          <img src="assets/images/CompTIAServer+2025.png" alt="CompTIA Server+ Certification" class="cert-img">
+          <p>CompTIA Server+</p>
+        </div>
       </div>
     </div>
   </section>
@@ -52,10 +52,11 @@
   <section id="projects">
     <h2>Projects</h2>
 
+    <!-- WeatherApp -->
     <div class="project-card">
       <h3>WeatherApp</h3>
       <img src="assets/images/WeatherAppWebUI.png" alt="Weather App Screenshot" class="project-img">
-      <p><strong>Description:</strong> WeatherApp provides current weather information and a 5-day forecast for any city, available as both desktop and web versions. It uses the OpenWeatherMap and LocationIQ APIs to display real-time weather data and maps.</p>
+      <p><strong>Description:</strong> WeatherApp provides current weather information and a 5-day forecast for any city, available as both desktop and web versions. It uses the VisualCrossing and LocationIQ APIs to display real-time weather data and maps.</p>
 
       <details>
         <summary>View Details</summary>
@@ -66,7 +67,7 @@
             <li><strong>Backend:</strong> Flask (Python 3.11)</li>
             <li><strong>Deployment:</strong> AWS Lambda (via Zappa)</li>
             <li><strong>Hosting:</strong> GitHub Pages</li>
-            <li><strong>APIs:</strong> OpenWeatherMap, LocationIQ</li>
+            <li><strong>APIs:</strong> VisualCrossing, LocationIQ</li>
           </ul>
 
           <h4>Key Features</h4>
@@ -85,8 +86,43 @@
         <a href="https://lintony6.github.io/WeatherApp/" target="_blank" class="btn">Live Demo</a>
       </div>
     </div>
-  </section>
 
+    <!-- Canvas Draw -->
+    <div class="project-card">
+      <h3>Canvas Draw</h3>
+      <img src="assets/images/CanvasWebUI.png" alt="Canvas Draw Screenshot" class="project-img">
+      <p><strong>Description:</strong> Canvas Draw is a web-based drawing application built with HTML5 Canvas and JavaScript. It allows users to create digital artwork using brushes, shapes, text, and a flood fill tool — complete with undo/redo, dark mode, and timelapse replay features.</p>
+
+      <details>
+        <summary>View Details</summary>
+        <div class="details-content">
+          <h4>Tech Stack</h4>
+          <ul class="tech-stack">
+            <li><strong>Frontend:</strong> HTML5, CSS, JavaScript</li>
+            <li><strong>Canvas API:</strong> Used for drawing, shapes, and layering</li>
+            <li><strong>Hosting:</strong> GitHub Pages</li>
+          </ul>
+
+          <h4>Key Features</h4>
+          <ul class="features">
+            <li>🖌 Tools: Brush, eraser, shapes (rectangle, circle, line), text, flood fill</li>
+            <li>🖼 Background image support with eraser transparency</li>
+            <li>↩️ Undo/Redo up to 50 actions</li>
+            <li>🧹 Clear canvas (preserves background)</li>
+            <li>💾 Download artwork as PNG</li>
+            <li>🌙 Dark mode toggle</li>
+            <li>🎥 Timelapse replay of drawing process</li>
+            <li>📱 Responsive design with touch support</li>
+          </ul>
+        </div>
+      </details>
+
+      <div class="links">
+        <a href="https://github.com/lintony6/CanvasDraw" target="_blank" class="btn">View on GitHub</a>
+        <a href="https://lintony6.github.io/CanvasDraw/" target="_blank" class="btn">Live Demo</a>
+      </div>
+    </div>
+  </section>
 
   <section id="contact">
     <h2>Contact</h2>
